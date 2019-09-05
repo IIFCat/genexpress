@@ -31,7 +31,7 @@ load("~/Documents/2019b_Summer/academic_stuff/Blue Data/Adult_Normal_Kidney_snDr
 gene.set.selected <- as.list(rownames(Loadings(ank.3, reduction = "pca")))
 
 
-if (interactive()) {
+#if (interactive()) {
   ui <- fluidPage(
     
     useShinyjs(),
@@ -108,4 +108,4 @@ if (interactive()) {
     show("app-content")
   }
   #shinyApp(ui, server)
-}
+#}
