@@ -78,7 +78,7 @@ gene.set.selected <- as.list(rownames(Loadings(ank.3, reduction = "pca")))
   )
 
   
-  server <- function(input, output) {
+  server <- function(input, output, session) {
     
     selDF <- eventReactive(input$button, {
       (input$features)
