@@ -107,5 +107,5 @@ gene.set.selected <- as.list(rownames(Loadings(ank.3, reduction = "pca")))
     hide(id = "loading-content", anim = TRUE, animType = "fade")    
     show("app-content")
   }
-  #shinyApp(ui, server)
+  shinyApp(ui, server)
 #}
