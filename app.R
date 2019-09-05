@@ -106,6 +106,8 @@ gene.set.selected <- as.list(rownames(Loadings(ank.3, reduction = "pca")))
     # Hide the loading message when the rest of the server function has executed
     hide(id = "loading-content", anim = TRUE, animType = "fade")    
     show("app-content")
+    
+    session$onSessionEnded(stopApp)
   }
   shinyApp(ui, server)
 #}
