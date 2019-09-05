@@ -107,5 +107,5 @@ if (interactive()) {
     hide(id = "loading-content", anim = TRUE, animType = "fade")    
     show("app-content")
   }
-  shinyApp(ui, server)
+  #shinyApp(ui, server)
 }
